@@ -37,7 +37,7 @@ export class ChatComponent implements OnInit, OnDestroy {
   }
 
   enviar() {
-    if ( this.texto.trim().length === 0 ){
+    if ( this.texto.trim().length === 0 ) {
       return;
     }
     this.chatService.sendMessage(this.texto);
